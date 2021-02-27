@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Landing Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Elena Page</title>
+</head>
+<body>
+    <!-- Sprite -->
+    <svg display="none">
+        <symbol id="google" viewBox="0 0 96.669 96.669">
+            <g>
+                <path d="M50.91,55.189l-4.533-3.522c-1.38-1.144-3.27-2.656-3.27-5.422c0-2.778,1.889-4.544,3.527-6.18
+                    c5.279-4.157,10.557-8.581,10.557-17.903c0-9.586-6.031-14.629-8.923-17.022h7.795L64.244,0H39.459
+                    C32.658,0,22.856,1.608,15.68,7.533c-5.408,4.666-8.046,11.099-8.046,16.892c0,9.831,7.548,19.798,20.88,19.798
+                    c1.259,0,2.636-0.124,4.022-0.252c-0.623,1.515-1.252,2.777-1.252,4.917c0,3.905,2.006,6.299,3.774,8.567
+                    c-5.663,0.39-16.237,1.018-24.033,5.809c-7.424,4.415-9.684,10.84-9.684,15.377c0,9.334,8.8,18.028,27.045,18.028
+                    c21.636,0,33.089-11.971,33.089-23.823C61.477,64.139,56.447,59.854,50.91,55.189z M34.431,40.691
+                    c-10.824,0-15.727-13.992-15.727-22.434c0-3.288,0.623-6.682,2.763-9.333C23.486,6.4,27,4.762,30.281,4.762
+                    c10.434,0,15.846,14.118,15.846,23.197c0,2.271-0.251,6.296-3.144,9.207C40.96,39.187,37.574,40.691,34.431,40.691z
+                    M34.555,91.387c-13.46,0-22.139-6.438-22.139-15.392c0-8.949,8.048-11.978,10.816-12.979c5.281-1.777,12.076-2.024,13.21-2.024
+                    c1.258,0,1.887,0,2.889,0.126c9.568,6.81,13.721,10.203,13.721,16.65C53.053,85.573,46.635,91.387,34.555,91.387z"/>
+                <polygon points="82.679,40.499 82.679,27.894 76.455,27.894 76.455,40.499 63.869,40.499 63.869,46.793 76.455,46.793 
+                    76.455,59.477 82.679,59.477 82.679,46.793 95.328,46.793 95.328,40.499 		"/>
+            </g>
+        </symbol>
+
+
+        <symbol id="facebook" viewBox="0 0 96.227 96.227">
+            <g>
+                <path d="M73.099,15.973l-9.058,0.004c-7.102,0-8.477,3.375-8.477,8.328v10.921h16.938l-0.006,17.106H55.564v43.895H37.897V52.332h-14.77V35.226h14.77V22.612C37.897,7.972,46.84,0,59.9,0L73.1,0.021L73.099,15.973L73.099,15.973z"/>
+            </g>
+        </symbol>
+
+
+        <symbol id="twitter" viewBox="0 0 97.637 97.637">
+            <g>
+                <path d="M97.523,18.526c-0.14-0.165-0.371-0.221-0.568-0.131c-2.919,1.295-5.99,2.226-9.153,2.776
+                    c3.358-2.526,5.86-6.024,7.143-10.035c0.062-0.192-0.002-0.402-0.159-0.527c-0.158-0.125-0.377-0.141-0.55-0.038
+                    c-3.782,2.243-7.878,3.824-12.18,4.701c-3.812-3.956-9.135-6.219-14.644-6.219c-11.204,0-20.318,9.114-20.318,20.317
+                    c0,1.355,0.131,2.697,0.391,4c-15.518-0.958-30.028-8.408-39.894-20.509c-0.101-0.124-0.254-0.193-0.414-0.177
+                    c-0.159,0.012-0.301,0.102-0.381,0.239c-1.8,3.088-2.751,6.621-2.751,10.215c0,6.229,2.83,12.053,7.649,15.896
+                    c-2.481-0.298-4.904-1.079-7.089-2.292c-0.147-0.083-0.33-0.082-0.477,0.003c-0.147,0.084-0.24,0.24-0.244,0.41l-0.002,0.26
+                    c0,8.946,5.895,16.801,14.282,19.409c-2.209,0.356-4.501,0.332-6.754-0.098c-0.166-0.031-0.34,0.026-0.454,0.154
+                    c-0.113,0.128-0.151,0.307-0.099,0.469c2.515,7.85,9.503,13.355,17.637,14.041c-6.785,4.971-14.805,7.59-23.279,7.59
+                    c-1.561,0-3.133-0.093-4.673-0.274c-0.22-0.025-0.438,0.106-0.514,0.317c-0.076,0.213,0.005,0.451,0.195,0.572
+                    c9.17,5.881,19.773,8.988,30.664,8.988c35.625,0,56.913-28.938,56.913-56.914c0-0.779-0.015-1.554-0.046-2.327
+                    c3.843-2.811,7.142-6.252,9.802-10.235C97.675,18.929,97.662,18.692,97.523,18.526z"/>
+            </g>
+        </symbol>
+    </svg>
+    <!-- / Sprite -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__bg"><img src="img/Layer_7.png" alt="фон"></div>
+        <div class="wrapper">
+            <nav class="header-nav">
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="img/Elena.png" alt="">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#!">home</a></li>
+                    <li><a href="#!">service</a></li>
+                    <li><a href="#!">features</a></li>
+                    <li><a href="#!">contact</a></li>
+                </ul>
+                <div class="burger"><span></span></div>
+            </nav>
+            <div class="header-title">
+                <h1>have a good day</h1>
+            </div>
+            <div class="header-subtitle">
+                <p>just for you on themeforest</p>
+            </div>
+            <div class="header-btn">
+                <a href="#" aria-label="header-btn">get your copy now</a>
+            </div>
+        </div>
+    </header>
+    <!-- /Header  -->
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Prof-icon -->
+        <section class="prof-icons">
+            <div class="wrapper">
+                <div class="prof-icons-column">
+                    <div class="prof-icons-column__row">
+                        <img src="img/icons/user-group_copy.svg" alt="group">
+                        <h3>PROFESIONALS</h3>
+                    </div>
+                    <div class="prof-icons-column__row">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                <div class="prof-icons-column">
+                    <div class="prof-icons-column__row">
+                        <img src="img/icons/heart.svg" alt="group">
+                        <h3>AMATEURS</h3>
+                    </div>
+                    <div class="prof-icons-column__row">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                <div class="prof-icons-column">
+                    <div class="prof-icons-column__row">
+                        <img src="img/icons/headset.svg" alt="group">
+                        <h3>FOR EVERYONE</h3>
+                    </div>
+                    <div class="prof-icons-column__row">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Prof-icon -->
+
+        <!-- Desc-template -->
+        <section class="desc-template">
+            <div class="wrapper">
+                <div class="desc-template-column">
+                    <div class="desc-template-column__row desc-img">
+                        <img src="img/Layer_14.png" alt="фото машины">
+                    </div>
+                    <div class="desc-template-column__row desc-text">
+                        <h2>Responsive email template</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis</p>
+                        <div class="desc-template-column__btn">
+                            <a href="#!"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="desc-template-column">
+                    <div class="desc-template-column__row desc-img">
+                        <img src="img/Layer_16.png" alt="фото челов">
+                    </div>
+                    <div class="desc-template-column__row desc-text">
+                        <h2>Fully compatible template</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis</p>
+                        <div class="desc-template-column__btn">
+                            <a href="#!"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Desc-template -->
+
+        <!-- Article -->
+        <article class="article">
+            <div class="wrapper">
+                <h2 class="article__title">Fully Supported template</h2>
+                <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem commodo vitae. Ut semper semper lacus. Suspendisse convallis vel tellus at consectetur. Aenean risus arcu</p>
+                <div class="article__btn"><a href="#!">Read more</a></div>
+            </div>
+        </article>
+        <!-- / Article -->
+
+        <!-- Full-template -->
+        <section class="full-template desc-template">
+            <div class="wrapper">
+                <div class="full-template__column desc-template-column">
+                    <div class="desc-template-column__row desc-img">
+                        <img src="img/Layer_17.png" alt="фото машины">
+                    </div>
+                    <div class="desc-template-column__row desc-text">
+                        <h2>FULLY Layered PSD</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="desc-template-column__btn">
+                            <a href="#!">Check this out ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-template__column desc-template-column">
+                    <div class="desc-template-column__row desc-img">
+                        <img src="img/Layer_20.png" alt="фото челов">
+                    </div>
+                    <div class="desc-template-column__row desc-text">
+                        <h2>FUll Compatibility</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="desc-template-column__btn">
+                            <a href="#!">Check this out ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-template__column desc-template-column">
+                    <div class="desc-template-column__row desc-img">
+                        <img src="img/Layer_18.png" alt="фото челов">
+                    </div>
+                    <div class="desc-template-column__row desc-text">
+                        <h2>very great modules </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="desc-template-column__btn">
+                            <a href="#!">Check this out ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Full-template -->
+
+        <!-- Message -->
+        <section class="message desc-template">
+            <div class="wrapper">
+                <div class="message__column desc-template-column">
+                    <div class="desc-template-column__row desc-text">
+                        <h2 class="article__title">SEND IT NOW</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
+                        <div class="desc-template-column__btn">
+                            <a href="#!"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="message__column desc-template-column">
+                    <div class="desc-template-column__row desc-text">
+                        <h2 class="article__title">VERY NICE TO SEE</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
+                        <div class="desc-template-column__btn">
+                            <a href="#!"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Message -->
+
+        <!-- Themeforest -->
+        <section class="themeforest">
+            <div class="wrapper">
+                <div class="themeforest-column theme-column-img">
+                    <img src="img/Layer_19.png" alt="челы">
+                </div>
+                <div class="message__column desc-template-column">
+                    <div class="desc-template-column__row desc-text">
+                        <h2>JUST FOR YOU ON THEMEFOREST</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis risus, in mattis erat convallis egestas.</p>
+                        <div class="article__btn">
+                            <a href="#!"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Themeforest -->
+
+        <!-- Brands -->
+        <section class="brands">
+            <div class="wrapper">
+                <div class="brands__title">
+                    <h2>this template was featured on </h2>
+                </div>
+                <ul class="brands__list">
+                    <li class="brands__item"><img src="img/TechCrunch.png" alt="TechCrunch"></li>
+                    <li class="brands__item"><img src="img/Promail.png" alt="Promail"></li>
+                    <li class="brands__item"><img src="img/Mashable.png" alt="Mashable"></li>
+                    <li class="brands__item"><img src="img/atlaspix.png" alt="atlaspix"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- / Brands -->
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__item item-text">
+                <p>Elenea © <span>copyright 2013 - Unsubscribe here</span></p>
+            </div>
+            <nav class="footer__item item-social">
+                <ul>
+                    <li>
+                        <a href="#!">
+                            <svg>
+                                <use xlink:href="#google"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <svg>
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <svg>
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- /Footer  -->
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <!-- /Scripts -->
+</body>
+</html>
